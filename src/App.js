@@ -1,16 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
-import { Route, Routes } from 'react-router-dom';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Component from './components';
 
 function App() {
   return (
-    <div className="App">
-      <Routes>
-
-        <Route path='/' element={<customComponent/>} />
-
-      </Routes>
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<Component />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

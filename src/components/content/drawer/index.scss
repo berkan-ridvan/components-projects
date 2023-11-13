@@ -1,0 +1,65 @@
+$ortakRenk: rgb(225, 153, 20);
+
+.drawer-container{
+    width: 300px;
+    min-height: 800px;
+    background-color: rgb(46, 48, 53);
+    color: $ortakRenk;
+
+    .drawer-profile{
+        display: flex;
+        border-bottom: 1px dotted $ortakRenk;
+        height: 60px;
+        padding: 20px;
+        margin-bottom: 20px;
+
+        h1{
+            margin: 0 0 0 10px!important;
+            color: $ortakRenk;
+        }
+
+        .drawer-profile-icon{
+            margin-top: 10px;
+        }
+    }
+
+    .drawer-items{
+        display: flex;
+        margin: 17px;
+        border: 1px solid $ortakRenk;
+        border-radius: 5px;
+
+        .drawer-items-icon{
+            margin: 10px 10px 10px 20px;
+        }
+        h4{
+            margin: 10px !important;
+        }
+    }
+    .drawer-items:hover{
+        background-color: $ortakRenk;
+        color: rgb(39, 27, 37);
+        animation: hoverEffect 600ms;
+    }
+
+    
+}
+
+
+
+
+
+
+@keyframes hoverEffect {
+    from {
+      /* Başlangıç durumu */
+      background-color: initial;
+      color: initial;
+    }
+  
+    to {
+      /* Bitiş durumu */
+      background-color: $ortakRenk;
+      color: rgb(39, 27, 37);
+    }
+  }

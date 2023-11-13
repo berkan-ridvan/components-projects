@@ -1,0 +1,15 @@
+.footer-container{
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 200px;
+    background-color: rgb(46, 48, 53);
+    bottom: 0;
+    position: sticky;
+    .item{
+        flex-grow: 1;
+        height: 180px;
+        margin-top: 10px;
+        flex-basis: 200;
+        text-align: center;
+    }
+}
